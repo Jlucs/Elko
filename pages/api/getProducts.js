@@ -6,7 +6,7 @@ export default async function handler(req, res) {
     const token = await getBearerToken(); // Get the token using the imported function
     console.log("Token:", token);
     const response = await axios.get(
-      "https://api.elko.cloud/v3.0/api/Catalog/Products",
+      "https://api.elko.cloud/v3.0/api/Catalog/Products?category=electronics&priceRange=100-500",
       {
         headers: {
           Authorization: `Bearer ${token}`, // Use the entire token response as bearer token
