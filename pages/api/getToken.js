@@ -25,8 +25,8 @@ import axios from "axios";
 // This function retrieves the bearer token
 export async function getBearerToken() {
   const credentials = {
-    username: "avoit21", // replace with your username
-    password: "Avoit2015", // replace with your password
+    username: process.env.ELKO_USERNAME,
+    password: process.env.ELKO_PASSWORD,
   };
 
   try {
