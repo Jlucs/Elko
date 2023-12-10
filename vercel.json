@@ -1,7 +1,10 @@
 {
   "functions": {
-    "api/*.js": {
+    "pages/api/getProducts.js": {
       "maxDuration": 120
+    },
+    "pages/api/*.js": {
+      "maxDuration": 60
     }
   }
 }
